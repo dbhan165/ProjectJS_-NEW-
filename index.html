@@ -2,44 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ASM2JS</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <p id="name"></p>
-    <p id="city"></p>
-    <p id="phoneNumber"></p>
-    <p id="birthDay"></p>
-    <button id="appear">Hiện</button>
+    <div class="row" style="width: 200px"><div>Tên: </div><input type="text" style="width: 150px"></div>
+    <div class="row" style="width: 210px"><div>DOB: </div><input type="text" style="width: 150px"></div>
+    <div class="row" style="width: 260px"><div>Maths Scores: </div><input type="text" style="width: 150px"></div>
+    <div class="row" style="width: 280px"><div>Physical Scores: </div><input type="text" style="width: 150px"></div>
+    <div class="row" style="width: 280px"><div>Chemical Scores: </div><input type="text" style="width: 150px"></div>
 
-    <script>
-        alert("Chào mừng bạn đến với ứng dụng JavaScript đầu tiên");
-        let theTen = document.getElementById("name");
-        let theTP = document.getElementById("city");
-        let theSDT = document.getElementById("phoneNumber");
-        let theNS = document.getElementById("birthDay");
-
-        let ten = prompt("Nhập tên của bạn:");
-        theTen.innerHTML = ten;
-        let thanhPho = prompt("Nhập tên thành phố của bạn:");
-        theTP.innerHTML = thanhPho;
-        let soDienThoai = prompt("Nhập số điện thoại của bạn:");
-        theSDT.innerHTML = soDienThoai;
-
-        let yeuCauNhap = true;
-        while (yeuCauNhap){
-            let namSinh = prompt("Nhập năm sinh của bạn:");
-            theNS.innerHTML = namSinh;
-            let now = new Date().getFullYear();
-            if (namSinh > now) console.log("Bạn đừng có điêu! Năm nay là năm " + now);
-            else yeuCauNhap = false;
-        }
-        
-        document.getElementById("appear").onclick = hien;
-        function hien() {
-            console.log("Đã bấm nút!");
-        }
-    </script>
+    
 </body>
 </html>
